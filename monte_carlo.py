@@ -36,8 +36,11 @@ def test_all(pool, n):
 if __name__ == '__main__':
     pool = multiprocessing.Pool()
     t0 = time.time()
-    print("Volume =", test_all(pool, 50))
+    print("Volume with multithreading  =", test_all(pool, 50))
+    print("Time spent with multithreading:", time.time() - t0)
+    t0 = time.time()
+    print("Volume without multithreading  =", count_volume(10000))
+    print("Time spent without multithreading:", time.time() - t0)
     print("Expected volume = 4.0587")
-    print("Time spent:", time.time() - t0)
 else:
     print("__name__:", __name__)
