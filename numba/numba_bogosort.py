@@ -4,17 +4,6 @@ from numba import njit, prange
 from numba.typed import List
 import bogosort_without_numba as bgw
 
-def create_arr(size):
-    arr = []
-    i = 0
-    while len(arr) < size:
-        t = random.randint(0, size - 1)
-        if t in arr:
-            continue
-        arr.append(t)
-        i += 1
-    return arr
-
 @njit
 def bogoSort(arr):
     while is_sorted(arr):
@@ -38,7 +27,7 @@ print("Данная программа сортирует массив от 0 д
 size = 0
 while size < 1 or size > 13:
     size = int(input("Введите количество элементов массива (от 1 до 13): "))
-arr = create_arr(size)
+arr = bgw.create_arr(size)
 
 t0 = time.time()
 typed_arr = List()
