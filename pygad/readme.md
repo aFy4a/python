@@ -33,4 +33,33 @@ def on_generation(ga_instance):
     print("Change = {}".format(ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)[1] - last_fitness))
     last_fitness = ga_instance.best_solution(pop_fitness=ga_instance.last_generation_fitness)[1]
 ```
+```python
+import numpy
 
+# Функция, которая возращает значение пригодности решения
+def fitness_func(solution, solution_idx):
+    pv, sv = kolmogorov_smirnov(solution) # Критерий К-С (см. ниже)
+    # Чем больше pv и ниже sv тем более вероятнее нормальность распределения
+    # sv умножаю на 20, потому что по моему опыту sv часто принимает довольно маленькие значения, а 20 выявленно опытным путем
+    fitness = 2 / (numpy.abs(1 - pv) + sv*20) 
+    return fitness 
+```
+```python
+import pandas
+from scipy import stats
+
+# Критерий Колмогорова-Смирнова
+def kolmogorov_smirnov(solution):
+    df = pandas.DataFrame(data={
+        'solution': solution
+    })
+    # Первое и последнее поколение записываю для того, чтобы потом сравнить
+    if (ga_instance.generations_completed == num_generations or ga_instance.generations_completed == 0):
+        df.to_csv("solution_{}.csv".format(ga_instance.generations_completed))
+
+    return stats.kstest(df, 'norm', (df.mean(), df.std()), N=5000) # Возвращает два значения: К-С-статитстика и Р-значение
+```
+```python 
+# Для запуска генетического алгоритма
+ga_instance.run()
+```
