@@ -66,9 +66,9 @@ ga_instance.run()
 <details><summary>Вот что получится:</summary><blockquote> 
 
 Generation = 1
-
+  
 Fitness = 173.97205904998307
-
+  
 Change = 173.97205904998307
 
 Generation = 2
@@ -670,7 +670,7 @@ Fitness = 38659.799502593814
 Change = 0.0
 </blockquote></details>
 
-## Теперь посмотрим на графики
+## Графики
 
 ```python
 df1 = pandas.read_csv("solution_0.csv")
@@ -678,3 +678,28 @@ df2 = pandas.read_csv("solution_{}.csv".format(num_generations))
 
 df1['solution'].plot(kind='bar')
 ```
+![](plot_first.png)
+
+```python
+df2['solution'].plot(kind='bar')
+```
+![](plot_last.png)
+
+## Распределение:
+```python
+df12 = pandas.DataFrame(data={
+    'Первое поколение': df1['solution'],
+    'Последнее поколение': df2['solution'],
+})
+df12.plot.kde()
+```
+![](plot_distr.png)
+
+## Зависимость значение fitness от поколения
+```python
+filename = 'genetic'
+ga_instance.save(filename=filename)
+loaded_ga_instance = pygad.load(filename=filename)
+loaded_ga_instance.plot_fitness()
+```
+![](genetic.png)
