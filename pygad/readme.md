@@ -63,3 +63,609 @@ def kolmogorov_smirnov(solution):
 # Для запуска генетического алгоритма
 ga_instance.run()
 ```
+<details><summary>Вот что получится:</summary><blockquote> 
+
+Generation = 1
+
+Fitness = 173.97205904998307
+
+Change = 173.97205904998307
+
+Generation = 2
+
+Fitness = 173.97205904998307
+
+Change = 0.0
+
+Generation = 3
+
+Fitness = 173.97205904998307
+
+Change = 0.0
+
+Generation = 4
+
+Fitness = 207.90999501388512
+
+Change = 33.93793596390205
+
+Generation = 5
+
+Fitness = 234.29747904754262
+
+Change = 26.3874840336575
+
+Generation = 6
+
+Fitness = 234.29747904754262
+
+Change = 0.0
+
+Generation = 7
+
+Fitness = 234.29747904754262
+
+Change = 0.0
+
+Generation = 8
+
+Fitness = 234.29747904754262
+
+Change = 0.0
+
+Generation = 9
+
+Fitness = 486.28438033295816
+
+Change = 251.98690128541554
+
+Generation = 10
+
+Fitness = 486.28438033295816
+
+Change = 0.0
+
+Generation = 11
+
+Fitness = 486.28438033295816
+
+Change = 0.0
+
+Generation = 12
+
+Fitness = 486.28438033295816
+
+Change = 0.0
+
+Generation = 13
+
+Fitness = 581.3454941334909
+
+Change = 95.06111380053272
+
+Generation = 14
+
+Fitness = 588.1418764119002
+
+Change = 6.796382278409283
+
+Generation = 15
+
+Fitness = 625.9091480027296
+
+Change = 37.76727159082941
+
+Generation = 16
+
+Fitness = 659.4457633292234
+
+Change = 33.5366153264938
+
+Generation = 17
+
+Fitness = 735.1817271873213
+
+Change = 75.73596385809788
+
+Generation = 18
+
+Fitness = 735.1817271873213
+
+Change = 0.0
+
+Generation = 19
+
+Fitness = 838.4842310379203
+
+Change = 103.30250385059901
+
+Generation = 20
+
+Fitness = 3870.4022261665687
+
+Change = 3031.9179951286483
+
+Generation = 21
+
+Fitness = 3870.4022261665687
+
+Change = 0.0
+
+Generation = 22
+
+Fitness = 3870.4022261665687
+
+Change = 0.0
+
+Generation = 23
+
+Fitness = 3870.4022261665687
+
+Change = 0.0
+
+Generation = 24
+
+Fitness = 3870.4022261665687
+
+Change = 0.0
+
+Generation = 25
+
+Fitness = 5769.722842928234
+
+Change = 1899.3206167616654
+
+Generation = 26
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 27
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 28
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 29
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 30
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 31
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 32
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 33
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 34
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 35
+
+Fitness = 5769.722842928234
+
+Change = 0.0
+
+Generation = 36
+
+Fitness = 6478.477391884017
+
+Change = 708.7545489557833
+
+Generation = 37
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 38
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 39
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 40
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 41
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 42
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 43
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 44
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 45
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 46
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 47
+
+Fitness = 6478.477391884017
+
+Change = 0.0
+
+Generation = 48
+
+Fitness = 9972.01232198448
+
+Change = 3493.5349301004635
+
+Generation = 49
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 50
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 51
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 52
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 53
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 54
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 55
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 56
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 57
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 58
+
+Fitness = 9972.01232198448
+
+Change = 0.0
+
+Generation = 59
+
+Fitness = 9972.01232198448
+
+
+Change = 0.0
+
+Generation = 60
+
+Fitness = 10645.766581059212
+
+Change = 673.7542590747307
+
+Generation = 61
+
+Fitness = 10645.766581059212
+
+Change = 0.0
+
+Generation = 62
+
+Fitness = 10645.766581059212
+
+Change = 0.0
+
+Generation = 63
+
+
+Fitness = 10645.766581059212
+
+Change = 0.0
+
+Generation = 64
+
+Fitness = 14200.750243239136
+
+Change = 3554.983662179924
+
+Generation = 65
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 66
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 67
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+
+Generation = 68
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 69
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 70
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 71
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 72
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 73
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+Generation = 74
+
+Fitness = 14200.750243239136
+
+Change = 0.0
+
+
+Generation = 75
+
+Fitness = 15786.507861151427
+
+Change = 1585.7576179122916
+
+Generation = 76
+
+Fitness = 15786.507861151427
+
+Change = 0.0
+
+Generation = 77
+
+Fitness = 15786.507861151427
+
+Change = 0.0
+
+Generation = 78
+
+Fitness = 15786.507861151427
+
+Change = 0.0
+
+Generation = 79
+
+Fitness = 27082.244692195585
+
+Change = 11295.736831044158
+
+Generation = 80
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 81
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 82
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 83
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 84
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 85
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 86
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 87
+
+Fitness = 27082.244692195585
+
+Change = 0.0
+
+Generation = 88
+
+Fitness = 34286.45638458348
+
+Change = 7204.211692387893
+
+Generation = 89
+
+Fitness = 34286.45638458348
+
+Change = 0.0
+
+Generation = 90
+
+Fitness = 34286.45638458348
+
+Change = 0.0
+
+Generation = 91
+
+Fitness = 37081.92334684217
+
+Change = 2795.4669622586953
+
+Generation = 92
+
+Fitness = 38659.799502593814
+
+Change = 1577.876155751641
+
+Generation = 93
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 94
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 95
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 96
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 97
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 98
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 99
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+
+Generation = 100
+
+Fitness = 38659.799502593814
+
+Change = 0.0
+</blockquote></details>
