@@ -670,7 +670,7 @@ Fitness = 38659.799502593814
 Change = 0.0
 </blockquote></details>
 
-## Графики
+### Графики
 
 ```python
 df1 = pandas.read_csv("solution_0.csv")
@@ -685,7 +685,7 @@ df2['solution'].plot(kind='bar')
 ```
 ![](plot_last.png)
 
-## Распределение:
+### Распределение:
 ```python
 df12 = pandas.DataFrame(data={
     'Первое поколение': df1['solution'],
@@ -695,7 +695,7 @@ df12.plot.kde()
 ```
 ![](plot_distr.png)
 
-## Зависимость значение fitness от поколения
+### Зависимость значение fitness от поколения
 ```python
 filename = 'genetic'
 ga_instance.save(filename=filename)
@@ -703,3 +703,12 @@ loaded_ga_instance = pygad.load(filename=filename)
 loaded_ga_instance.plot_fitness()
 ```
 ![](genetic.png)
+
+## Вывод 
+```python
+solution, solution_fitness, solution_idx = ga_instance.best_solution(ga_instance.last_generation_fitness)
+print("Parameters of the best solution : {solution}".format(solution=solution))
+```
+Parameters of the best solution : [14. 21. 14. 17. 15. 17. 16. 14. 20. 18. 21. 18. 15. 17.  0. 16. 14. 16.
+ 17. 17. 24. 16. 23. 23. 24. 20. 21. 16. 17. 10. 17. 12. 15. 23. 17. 15.
+ 14. 18. 18. 15. 10. 21. 24. 19. 17. 23. 19. 16. 16. 18.]
