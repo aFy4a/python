@@ -25,7 +25,7 @@ ga_instance = pygad.GA(num_generations=num_generations,
 ```python
 last_fitness = 0
 
-# Эта функция запускается в конце каждого поколения, в нашем случае, для того, чтобы узнать изменения между поколениями
+# Эта функция запускается в конце каждого поколения в нашем случае для того, чтобы узнать изменения между поколениями
 def on_generation(ga_instance):
     global last_fitness
     print("Generation = {}".format(ga_instance.generations_completed))
@@ -39,7 +39,7 @@ import numpy
 # Функция, которая возращает значение пригодности решения
 def fitness_func(solution, solution_idx):
     pv, sv = kolmogorov_smirnov(solution) # Критерий К-С (см. ниже)
-    # Чем больше pv и ниже sv тем более вероятнее нормальность распределения
+    # Чем больше pv и ниже sv, тем более вероятнее нормальность распределения
     # sv умножаю на 20, потому что по моему опыту sv часто принимает довольно маленькие значения, а 20 выявленно опытным путем
     fitness = 2 / (numpy.abs(1 - pv) + sv*20) 
     return fitness 
